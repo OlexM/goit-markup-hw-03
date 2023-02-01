@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", "FF DIN", sans-serif;
   color: var(--body-color);
@@ -17,15 +21,13 @@ body {
 .header {
   border-bottom: 1px solid var(--cornflower);
 }
-.header a {
-  text-decoration: none;
-}
 .logo-text {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--iris);
+  text-transform: uppercase;
 }
 .logo-text-right {
   color: var(--navy-blue);
@@ -141,6 +143,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--iris);
+  text-transform: uppercase;
 }
 .f-logo-text-right {
   color: var(--cloud);
@@ -192,7 +195,6 @@ body {
   border: 1px solid var(--cornflower);
 }
 .examples-link {
-  text-decoration: none;
 }
 .examples-title {
   font-weight: 500;
