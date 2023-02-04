@@ -1,7 +1,25 @@
+/* =========RESET=========== */
 a {
   text-decoration: none;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+/* ===========STYLES===================== */
 body {
   font-family: "Roboto", "FF DIN", sans-serif;
   color: var(--body-color);
@@ -17,8 +35,20 @@ body {
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
 }
+.container {
+  width: 100%;
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 /* --------HEADER--------- */
 .header {
+}
+.header-wrap {
+  display: flex;
+  flex-grow: 1;
   border-bottom: 1px solid var(--cornflower);
 }
 .logo-text {
@@ -32,8 +62,15 @@ body {
 .logo-text-right {
   color: var(--navy-blue);
 }
+.nav {
+  padding: 24px 156px;
+  display: flex;
+  gap: 76px;
+  flex-grow: 1;
+}
 .nav-list {
-  list-style-type: none;
+  display: flex;
+  gap: 40px;
 }
 .nav-item-text {
   font-weight: 500;
@@ -51,9 +88,14 @@ body {
   border-bottom: 4px solid var(--ocean);
   border-radius: 2px;
 }
+.address {
+  padding: 24px 156px;
+  flex-grow: 1;
+}
 .address-list {
-  list-style-type: none;
   font-style: normal;
+  display: flex;
+  gap: 40px;
 }
 .mail-link:hover {
   color: var(--ocean);
@@ -68,11 +110,15 @@ body {
 /* --------HERO--------- */
 .hero {
   background-color: var(--navy-blue);
+  display: flex;
+  flex-direction: column;
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   color: var(--white);
+  padding: 188px 473px 48px 473px;
+  flex-grow: 1;
 }
 .hero-btn {
   background-color: var(--iris);
@@ -80,14 +126,15 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  display: inline-block;
+  margin: 0 635px 188px 636px;
+  padding: 19px 0;
 }
 .hero-btn:hover {
   background-color: var(--ocean);
 }
 /* --------OUR FEATURES--------- */
 .features-list {
-  list-style-type: none;
 }
 .features-title {
   font-weight: 500;
@@ -103,7 +150,6 @@ body {
   text-transform: capitalize;
 }
 .doing-list {
-  list-style-type: none;
 }
 .doing-image {
   border: 1px solid var(--cornflower);
@@ -119,7 +165,6 @@ body {
   text-transform: capitalize;
 }
 .team-list {
-  list-style-type: none;
 }
 .team-name {
   font-weight: 500;
@@ -130,9 +175,6 @@ body {
 /* --------FOOTER--------- */
 .footer {
   background-color: var(--navy-blue);
-}
-.footer a {
-  text-decoration: none;
 }
 .footer-text {
   color: var(--cornflower);
@@ -165,7 +207,6 @@ body {
 /* --------PORTFOLIO--------- */
 /* --------FILTERS--------- */
 .filters-list {
-  list-style-type: none;
 }
 .filters-btn {
   font-family: "Roboto", "FF DIN", sans-serif;
@@ -177,7 +218,6 @@ body {
   background-color: var(--cloud);
   border: 1px solid var(--cornflower);
   border-radius: 4px;
-  cursor: pointer;
 }
 .filters-btn:hover {
   background-color: var(--ocean);
@@ -189,7 +229,6 @@ body {
 }
 /* --------EXAMPLES--------- */
 .examples-list {
-  list-style-type: none;
 }
 .examples-item {
   border: 1px solid var(--cornflower);
