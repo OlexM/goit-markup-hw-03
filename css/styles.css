@@ -113,12 +113,13 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 188px 473px;
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   color: var(--white);
-  padding: 188px 473px 48px 473px;
+  /* padding: 188px 473px 48px 473px; */
   /* flex-grow: 1; */
 }
 .hero-btn {
@@ -128,17 +129,21 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /* display: inline-block; */
-  margin: 0 635px 188px 636px;
+  /* margin: 0 635px 188px 636px; */
+  margin: 48px 163px 0 163px;
   padding: 16px 32px;
 }
 .hero-btn:hover {
   background-color: var(--ocean);
 }
 /* --------OUR FEATURES--------- */
+.features {
+  padding: 120px 156px;
+}
 .features-list {
   display: flex;
   gap: 24px;
-  padding: 120px 1px;
+  /* padding: 120px 0; */
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -151,12 +156,16 @@ body {
   line-height: 1.2;
   color: var(--navy-blue);
 }
+.features-text {
+  margin-top: 8px;
+}
 /* --------DOING--------- */
 .doing {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding: 0 156px 120px 156px;
 }
 .doing-title {
   font-size: 36px;
@@ -169,7 +178,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 0 156px 120px 156px;
 }
 .doing-image {
   border: 1px solid var(--cornflower);
@@ -182,6 +190,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding: 0 156px 120px 156px;
 }
 .team-title {
   font-size: 36px;
@@ -195,7 +204,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 .team-card {
   display: flex;
@@ -221,16 +230,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 100px 1020px 100px 156px;
 }
 .footer-logo {
-  margin-left: 156px;
-  margin-top: 100px;
+  /* margin-left: 156px;
+  margin-top: 100px; */
 }
 .footer-text {
   color: var(--cornflower);
   width: 264px;
-  margin-left: 156px;
-  margin-bottom: 100px;
+  /* margin-left: 156px;
+  margin-bottom: 100px; */
 }
 .f-logo-text {
   font-family: "Raleway", sans-serif;
@@ -259,13 +269,16 @@ body {
 }
 /* --------PORTFOLIO--------- */
 /* --------FILTERS--------- */
+.filters {
+  padding: 96px 427px 72px 427px;
+}
 .filters-list {
   display: flex;
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  /* padding-top: 96px;
+  padding-bottom: 72px; */
 }
 .filters-btn {
   font-family: "Roboto", "FF DIN", sans-serif;
@@ -288,21 +301,31 @@ body {
   color: var(--white);
 }
 /* --------EXAMPLES--------- */
+.examples {
+  padding: 0 156px 120px 156px;
+}
 .examples-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
   column-gap: 24px;
   justify-content: center;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 .examples-item {
-  border: 1px solid var(--cornflower);
+  /* border: 1px solid var(--cornflower); */
 }
 .examples-link {
   display: flex;
   flex-direction: column;
   padding-bottom: 32px;
+}
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
 }
 .examples-title {
   font-weight: 500;
