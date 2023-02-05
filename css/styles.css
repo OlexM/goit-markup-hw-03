@@ -41,14 +41,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 /* --------HEADER--------- */
 .header {
 }
 .header-wrap {
   display: flex;
-  flex-grow: 1;
+  flex-wrap: wrap;
   border-bottom: 1px solid var(--cornflower);
 }
 .logo-text {
@@ -112,13 +112,14 @@ body {
   background-color: var(--navy-blue);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   color: var(--white);
   padding: 188px 473px 48px 473px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 .hero-btn {
   background-color: var(--iris);
@@ -126,15 +127,23 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0 635px 188px 636px;
-  padding: 19px 0;
+  padding: 16px 32px;
 }
 .hero-btn:hover {
   background-color: var(--ocean);
 }
 /* --------OUR FEATURES--------- */
 .features-list {
+  display: flex;
+  gap: 24px;
+  padding: 120px 1px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.features-item {
+  width: 264px;
 }
 .features-title {
   font-weight: 500;
@@ -143,41 +152,85 @@ body {
   color: var(--navy-blue);
 }
 /* --------DOING--------- */
+.doing {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .doing-title {
   font-size: 36px;
   line-height: 1.11;
   color: var(--navy-blue);
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0 156px 120px 156px;
 }
 .doing-image {
   border: 1px solid var(--cornflower);
+  display: block;
 }
 /* --------TEAM--------- */
 .team {
   background-color: var(--cloud);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .team-title {
   font-size: 36px;
   line-height: 1.11;
   color: var(--navy-blue);
   text-transform: capitalize;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 32px;
 }
 .team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-blue);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 /* --------FOOTER--------- */
 .footer {
   background-color: var(--navy-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-logo {
+  margin-left: 156px;
+  margin-top: 100px;
 }
 .footer-text {
   color: var(--cornflower);
+  width: 264px;
+  margin-left: 156px;
+  margin-bottom: 100px;
 }
 .f-logo-text {
   font-family: "Raleway", sans-serif;
@@ -207,6 +260,12 @@ body {
 /* --------PORTFOLIO--------- */
 /* --------FILTERS--------- */
 .filters-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .filters-btn {
   font-family: "Roboto", "FF DIN", sans-serif;
@@ -218,6 +277,7 @@ body {
   background-color: var(--cloud);
   border: 1px solid var(--cornflower);
   border-radius: 4px;
+  padding: 12px 24px;
 }
 .filters-btn:hover {
   background-color: var(--ocean);
@@ -229,15 +289,30 @@ body {
 }
 /* --------EXAMPLES--------- */
 .examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  column-gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
 }
 .examples-item {
   border: 1px solid var(--cornflower);
 }
 .examples-link {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
 }
 .examples-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-blue);
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+.examples-text {
+  padding-left: 10px;
 }
