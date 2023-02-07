@@ -335,4 +335,5 @@ body {
   padding-bottom: 8px;
 }
 .examples-text {
+  color: var(--body-color);
 }
